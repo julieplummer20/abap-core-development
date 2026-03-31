@@ -91,7 +91,7 @@ sort top, skip -->
               lo_http_client  TYPE REF TO if_web_http_client,
               lo_client_proxy TYPE REF TO /iwbep/if_cp_client_proxy,
               lo_request      TYPE REF TO /iwbep/if_cp_request_read_list,
-              lo_response     TYPE REF TO /iwbep/if_cp_response_read_lst.
+              lo_response     TYPE REF TO /iwbep/if_cp_response_read_list.
 
         " 1. Get the destination of remote system; Create http client
         DATA(lo_destination) = cl_http_destination_provider=>create_by_comm_arrangement(
